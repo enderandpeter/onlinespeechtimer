@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Online Speech Timer</title>
+<link rel="stylesheet" href="style/index.css" type="text/css">
+<script type="text/javascript" src="scripts/index.js"></script>
+</head>
+
+<body>
+<ul id="settings_container" class="hidden">
+	<li class="warning_limit_row">
+		<input type="text" id="badMinutes" maxlength="3" min="0" max="999" pattern="\d+" placeholder="00" />
+		:
+		<input type="text" id="badSeconds" maxlength="2" min="0" max="59" pattern="\d+" placeholder="00"  />
+	</li>
+	<button id="hidebutton" title="Toggle options"></button>
+</ul>
+<form id="clockForm">
+	<div id="clock">
+		<input type="text" id="minutes" maxlength="3" min="0" max="999" pattern="\d+" placeholder="00" />
+		<span id="colon">:</span>
+		<input type="text" id="seconds" maxlength="2" min="0" max="59" pattern="\d+" placeholder="00" />
+	</div>
+	<div id="buttonContainer">
+		<button id="start_stop" type="submit"></button>
+		<button id="reset" type="button">
+			<span>Reset</span>
+		</button>
+	</div>
+</form>
+
+</body>
+</html>

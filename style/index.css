@@ -1,0 +1,157 @@
+body {
+    background-color: rgba(253, 245, 230, 0.5);
+    top: 10%;
+}
+#settings_container {
+    float: left;
+    position: relative;
+	right: 0em;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+    background-color: white;
+    color: blue;
+    font-family: Tahoma;
+    margin: 0 0 1em;
+	padding: 0.5em;
+	list-style-type: none;
+}
+#hidebutton {
+    border: thin solid #000080;
+    border-radius: 1em 1em 1em 1em;
+    height: 1.5em;
+    left: 15.5em;
+    position: absolute;
+    top: 0.7em;
+	cursor: pointer;
+	width: 1.45em;
+}
+#hidebutton:hover {
+    border-color: transparent;
+}
+#hidebutton:hover:before {
+    border-color: blue;
+}
+#hidebutton:before {
+    border-width: 0 0 0.2em 0.2em;
+    border-style: solid;
+    content: "\a0"; /* Non-breaking space */
+    height: 0.5em;
+    left: 0.5em;
+    position: absolute;
+    top: 0.35em;
+    transform: rotate(45deg);
+	-webkit-transform: rotate(45deg); /* Webkit browsers still need this */
+    width: 0.5em;
+}
+#settings_container.hidden{
+	right: 13em;
+}
+#settings_container input {
+    text-align: center;
+}
+#settings_container > li > input {
+    width: 2em;
+}
+#settings_container .warning_limit_row:before {
+    content: 'Warning Limit';
+}
+#clock {
+    text-align: center;
+	clear: both;
+}
+#clock > input {
+    background-color: #DFDFDF;
+    border: 2px solid transparent;
+    display: inline;
+    font-size: 12em;
+    text-align: center;
+    width: 40%;
+}
+#clock > input::-webkit-input-placeholder { /* Required for Safari */
+	text-align: center;
+}
+#clock > input:hover {
+    background-color: #FFFAF0;
+    border: 2px solid black;
+}
+#clock > input:focus {
+    background-color: #FFE4B5;
+}
+.good {
+    background-color: green;
+}
+.bad {
+    background-color: yellow;
+}
+.ugly {
+    background-color: red;
+}
+#colon {
+    bottom: 0.15em;
+    font-size: 10em;
+    position: relative;
+}
+#buttonContainer {
+    width: 100%;
+    display: table;
+    margin: 3em auto 0;
+    text-align: center;
+}
+#buttonContainer > button {
+    display: inline;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 4em;
+    padding: 0.5em;
+	cursor: pointer;
+	margin: 0 0.5em 0.5em;
+}
+
+#buttonContainer > button:focus {
+	border-color: blue;
+	box-shadow: inset 0 0 0.05em blue;
+}
+
+#buttonContainer > button:hover{
+    border-color: transparent;
+    color: #FFFAF0;
+}
+#start_stop:before {
+	content: 'Start';
+	display: inline-block;
+}
+#start_stop.running:before {
+    content: 'Pause';
+	display: inline-block;
+}
+#start_stop.paused:before {
+	content: 'Resume';
+}
+#start_stop.stopped:before{
+	content: 'Start';
+}
+#start_stop:after {
+    display: inline-block;
+    content: '\a0'; /* Non-breaking space */
+    position: relative;
+	top: 0.25em;
+	right: -8%;
+    width: 0.8em;
+	background: url('../images/play.png') no-repeat;
+}
+#start_stop.running:after {
+	width: 0.8em;
+    background-image: url('../images/pause.png');    
+}
+#start_stop.paused:after, #start_stop.stopped:after {
+	background-image: url('../images/play.png');	
+}
+#start_stop:hover, #start_stop:active {
+    background-color: #008000;
+}
+#start_stop img {
+    margin-left: 0.5em;
+}
+#reset:hover, #reset:active {
+    background-color: #FF0000;
+}
