@@ -155,3 +155,43 @@ body {
 #reset:hover, #reset:active {
     background-color: #FF0000;
 }
+
+/* iPhone Style */
+@media only screen and (max-device-width: 480px){
+
+#clock > input {
+	width: 25%;
+}
+#clockForm{
+	position: relative;
+	top: 4em;
+}
+#hidebutton {
+	top: 1.5em;
+	left: 38em;
+	height: 5em;
+	width: 5em;
+	border: thick solid black;
+	border-radius: 3em;
+	background-color: white;
+}
+#hidebutton:before {
+	height: 2em;
+	width: 2em;
+	top: 0.8em;
+	border-left-width: 0.4em;
+	border-bottom-width: 0.4em;
+	left: 1.3em;
+}
+#settings_container{
+	font-size: 2em;
+	margin-bottom: 0;
+	top: 1em;
+}
+#settings_container > li > input {
+	font-size: 0.8em;
+}
+#settings_container > li > input::-webkit-input-placeholder{
+
+}
+}
