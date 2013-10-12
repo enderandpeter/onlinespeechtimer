@@ -14,4 +14,4 @@ An HTML/CSS/JavaScript speech timer with color notifications
 ![Warning](http://aninternetpresence.net/github/onlinespeechtimer/warning.PNG "Warning")
 
 ************
-Current hosted on [my site](http://aninternetpresence.net/onlinespeechtimer/). It may move to Dropbox in the future.
+Currently hosted on [my site](http://aninternetpresence.net/onlinespeechtimer/). It may move to Dropbox in the future.
